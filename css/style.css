@@ -1,0 +1,105 @@
+/* univesal selector */
+*{
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+/* element selector */
+body{
+    background-color: #38009e;
+}
+/* id selector */
+#admin-box{
+    background-color: #6600cc;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin:10% auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+#admin-box:hover{
+    box-shadow: 10px 10px 10px rgb(224, 231, 234);
+    transition: ease-in-out 0.8s;
+}
+/* descendant selector */
+#admin-box h1{
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+/* grouping selector */
+input,label,select{
+    display: block;
+}
+/* attribute selector */
+
+label{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+select{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+option{
+    background-color:#38009e ;
+}
+/* element selector */
+input{
+    background-color: transparent;
+    width: 90%;
+    margin:10px auto 0px;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+/* psuso element selector */
+input::placeholder{
+    color:#fff;
+}
+/* attribute selector */
+input[type="submit"]{
+    width: 50%;
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+/* psudo class selector  */
+input[type="submit"]:hover{
+    background-color: rgb(202, 238, 226);
+    color: rgb(97, 0, 41);
+    transition: ease-in-out 0.8s;
+
+}
+/* class selector */
+.pg{
+    font-size: 18px;
+    line-height: 18px;
+    margin: 10px 0px;
+}
+.pg::first-letter{
+    font-size: 25px;
+
+}
+.pg a{
+    text-transform:uppercase;
+    color: #38009e;
+    font-weight: 600;
+}
+.reset-p{
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 50px;
+}
